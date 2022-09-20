@@ -23,14 +23,14 @@ public class Blob {
 		while(sc.hasNextLine()) {
 	        String s = sc.nextLine();
 	        pw.write(s);
-	    	}
-			if(sc != null) {
-				sc.close();  
-			}
-			if(pw != null) {
-				pw.flush();
-				pw.close();
-			}
+	    }
+		if(sc != null) {
+			sc.close();  
+		}
+		if(pw != null) {
+			pw.flush();
+			pw.close();
+		}
 	}
 	
 	public String getSha1() {
